@@ -33,6 +33,14 @@ namespace Datenbank_Projekt
             if(loadingBarValue >= loadingProgressbar.Maximum)
             {
                 loadingbarTimer.Stop();
+
+                // Finisch loading show main menu screen
+
+                // Unten ist der Code welcher erscheint und den Loadingbar danach verstecken lässt
+                MainMenuScreen mainMenuScreen = new MainMenuScreen();
+                mainMenuScreen.Show();
+
+                this.Hide();
             }
         }
 
