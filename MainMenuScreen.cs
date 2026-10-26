@@ -24,5 +24,13 @@ namespace Datenbank_Projekt
 
             this.Hide();
         }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            Invoice invoiceScreen = new Invoice();
+            invoiceScreen.Show();
+
+            this.Hide();
+        }
     }
 }

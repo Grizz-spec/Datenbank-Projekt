@@ -34,7 +34,7 @@ namespace Datenbank_Projekt
             {
                 loadingbarTimer.Stop();
 
-                // Finisch loading show main menu screen
+                // Finish loading show main menu screen
 
                 // Unten ist der Code welcher erscheint und den Loadingbar danach verstecken lässt
                 MainMenuScreen mainMenuScreen = new MainMenuScreen();

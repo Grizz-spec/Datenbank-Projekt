@@ -130,5 +130,12 @@ namespace Datenbank_Projekt
             sqlCommand.ExecuteNonQuery();
             databaseConnection.Close();
         }
+
+        private void ProductsReturnMenu_Click(object sender, EventArgs e)
+        {
+            MainMenuScreen mainMenuScreen = new MainMenuScreen();
+            mainMenuScreen.Show();
+            this.Close();
+        }
     }
 }

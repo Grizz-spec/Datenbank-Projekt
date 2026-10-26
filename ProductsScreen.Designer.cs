@@ -44,6 +44,7 @@
             this.btnProductClear = new System.Windows.Forms.Button();
             this.btnProductDelete = new System.Windows.Forms.Button();
             this.productsDGV = new System.Windows.Forms.DataGridView();
+            this.ProductsReturnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productsDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -234,12 +235,26 @@
             this.productsDGV.TabIndex = 13;
             this.productsDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDGV_CellClick);
             // 
+            // ProductsReturnMenu
+            // 
+            this.ProductsReturnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ProductsReturnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProductsReturnMenu.ForeColor = System.Drawing.Color.White;
+            this.ProductsReturnMenu.Location = new System.Drawing.Point(411, 116);
+            this.ProductsReturnMenu.Name = "ProductsReturnMenu";
+            this.ProductsReturnMenu.Size = new System.Drawing.Size(75, 23);
+            this.ProductsReturnMenu.TabIndex = 14;
+            this.ProductsReturnMenu.Text = "Zurück";
+            this.ProductsReturnMenu.UseVisualStyleBackColor = false;
+            this.ProductsReturnMenu.Click += new System.EventHandler(this.ProductsReturnMenu_Click);
+            // 
             // ProductsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(799, 461);
+            this.Controls.Add(this.ProductsReturnMenu);
             this.Controls.Add(this.productsDGV);
             this.Controls.Add(this.btnProductDelete);
             this.Controls.Add(this.btnProductClear);
@@ -279,5 +294,6 @@
         private System.Windows.Forms.Button btnProductClear;
         private System.Windows.Forms.Button btnProductDelete;
         private System.Windows.Forms.DataGridView productsDGV;
+        private System.Windows.Forms.Button ProductsReturnMenu;
     }
 }
